@@ -47,10 +47,10 @@ Rectangle.prototype.draw = function(ctx)
 
 Rectangle.prototype.calculateArea = function()
 {
-    return ((this.positionX2 - this.positionX1) * (this.positionY2 - this.positionY1));
+    return Math.abs((this.positionX2 - this.positionX1) * (this.positionY2 - this.positionY1));
 };
 
 Rectangle.prototype.calculatePerimeter = function()
 {
-    return (2 * ((this.positionX2 - this.positionX1) + (this.positionY2 - this.positionY1)));
+    return Math.abs(2 * ((this.positionX2 - this.positionX1) + (this.positionY2 - this.positionY1)));
 };
