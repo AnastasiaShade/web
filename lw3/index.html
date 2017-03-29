@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title></title>
+		<link rel="stylesheet" href="css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="css/style.min.[877846da].css"/>
+    </head>
+    <body class="gradient">
+		<div class="container-fluid">
+			<div class="shape col-xs-12 col-sm-5 col-md-4">
+				<form id="form">
+					<div class="form-group">
+						<label for="shape-type">Choose shape:</label>
+						<select class="shape-type form-control" id="shape-type">
+							<option value="choose_shape" disabled selected>Choose shape</option>
+							<option value="circle">Circle</option>
+							<option value="rectangle">Rectangle</option>
+							<option value="triangle">Triangle</option>
+						</select>
+					</div>
+					<div class="form-group">
+						<label for="fill-color">Fill color:</label>
+						<input type="text" maxlength=7 id="fill-color" class="form-control"/>
+					</div>
+					<div class="form-group">
+						<label for="border-color">Border color:</label>
+						<input type="text" maxlength=7 id="border-color" class="form-control"/>
+					</div>
+					<div id="circle" class="circle">
+						<div class="form-group">
+							<label for="radius">Radius:</label>
+							<input type="text" maxlength=3 id="radius" class="form-control"/>
+						</div>
+						<div class="form-group">
+							<label for="center-x">CenterX:</label>
+							<input type="text" maxlength=3 id="center-x" class="form-control"/>
+						</div>
+						<div class="form-group">
+							<label for="center-y">CenterY:</label>
+							<input type="text" maxlength=3 id="center-y" class="form-control"/>
+						</div>
+					</div>
+					<div id="rectangle" class="rectangle">
+						<div class="form-group">
+							<label for="rect-x1">X1:</label>
+							<input type="text" maxlength=3 id="rect-x1" class="form-control"/>
+						</div>
+						<div class="form-group">
+							<label for="rect-y1">Y1:</label>
+							<input type="text" maxlength=3 id="rect-y1" class="form-control"/>
+						</div>
+						<div class="form-group">
+							<label for="rect-x2">X2:</label>
+							<input type="text" maxlength=3 id="rect-x2" class="form-control"/>
+						</div>
+						<div class="form-group">
+							<label for="rect-y2">Y2:</label>
+							<input type="text" maxlength=3 id="rect-y2" class="form-control"/>
+						</div>  
+					</div>
+					<div id="triangle" class="triangle">
+						<div class="form-group">
+							<label for="triangle-x1">X1:</label>
+							<input type="text" maxlength=3 id="triangle-x1" class="form-control"/>
+						</div>
+						<div class="form-group">
+							<label for="triangle-y1">Y1:</label>
+							<input type="text" maxlength=3 id="triangle-y1" class="form-control"/>
+						</div>
+						<div class="form-group">
+							<label for="triangle-x2">X2:</label>
+							<input type="text" maxlength=3 id="triangle-x2" class="form-control"/>
+						</div>
+						<div class="form-group">
+							<label for="triangle-y2">Y2:</label>
+							<input type="text" maxlength=3 id="triangle-y2" class="form-control"/>
+						</div>
+						<div class="form-group">
+							<label for="triangle-x3">X3:</label>
+							<input type="text" maxlength=3 id="triangle-x3" class="form-control"/>
+						</div>
+						<div class="form-group">
+							<label for="triangle-y3">Y3:</label>
+							<input type="text" maxlength=3 id="triangle-y3" class="form-control"/>
+						</div>
+					</div>
+					<div id="perimeter" class="perimeter"></div>
+					<div id="area" class="area"></div>
+				</form>
+			</div>
+			<canvas id="canvas" class="col-xs-12 col-sm-7 col-md-8"></canvas>
+		</div>
+        <script type="text/javascript" src="js/main.min.[03c3ac7f].js"></script>
+    </body>
+</html>
