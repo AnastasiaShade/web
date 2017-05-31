@@ -1,0 +1,45 @@
+canvas
+{
+    width: 800px;
+    height: 600px;
+    border: 3px solid #000;
+}
+
+.shape
+{
+    float: left;
+    width: 300px;
+    height: 600px;
+    background: #b2f7ab;
+    border: 1px solid #555;
+    margin: 0 50px;
+}
+
+form
+{
+    width: 250px;
+    margin: 10px auto;
+}
+
+label, input, select
+{
+    display: block;
+}
+
+input, select
+{
+    margin-top: 3px;
+}
+
+label
+{
+    padding: 5px 0;
+}
+
+.circle, .rectangle, .triangle
+{
+    display: none;
+}
+
+
+

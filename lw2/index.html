@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title></title>
+        <link rel="stylesheet" href="css/style.css"/>
+    </head>
+    <body>
+        <div class="shape">
+            <form id="form">
+                <label>
+                    Choose shape:
+                    <select class="shape_type" id="shape_type">
+                        <option value="choose_shape" disabled selected>Choose shape</option>
+                        <option value="circle">Circle</option>
+                        <option value="rectangle">Rectangle</option>
+                        <option value="triangle">Triangle</option>
+                    </select>
+                </label>
+                <label>
+                    Fill color:
+                    <input type="text" maxlength=7 id="fill_color" />
+                </label>
+                <label>
+                    Border color:
+                    <input type="text" maxlength=7 id="border_color" />
+                </label>
+                <div id="circle" class="circle">
+                    <label>
+                        Radius:
+                        <input type="text" maxlength=3 id="radius" />
+                    </label>
+                    <label>
+                        CenterX:
+                        <input type="text" maxlength=3 id="center_x" />
+                    </label>
+                    <label>
+                        CenterY:
+                        <input type="text" maxlength=3 id="center_y" />
+                    </label>
+                </div>
+                <div id="rectangle" class="rectangle">
+                    <label>
+                        X1:
+                        <input type="text" maxlength=3 id="rect_x1" />
+                    </label>
+                    <label>
+                        Y1:
+                        <input type="text" maxlength=3 id="rect_y1" />
+                    </label>
+                    <label>
+                        X2:
+                        <input type="text" maxlength=3 id="rect_x2" />
+                    </label>
+                    <label>
+                        Y2:
+                        <input type="text" maxlength=3 id="rect_y2" />
+                    </label>
+                </div>
+                <div id="triangle" class="triangle">
+                    <label>
+                        X1:
+                        <input type="text" maxlength=3 id="triangle_x1" />
+                    </label>
+                    <label>
+                        Y1:
+                        <input type="text" maxlength=3 id="triangle_y1" />
+                    </label>
+                    <label>
+                        X2:
+                        <input type="text" maxlength=3 id="triangle_x2" />
+                    </label>
+                    <label>
+                        Y2:
+                        <input type="text" maxlength=3 id="triangle_y2" />
+                    </label>
+                    <label>
+                        X3:
+                        <input type="text" maxlength=3 id="triangle_x3" />
+                    </label>
+                    <label>
+                        Y3:
+                        <input type="text" maxlength=3 id="triangle_y3" />
+                    </label>
+                </div>
+                <div id="perimeter"></div>
+                <div id="area"></div>
+            </form>
+        </div>
+        <canvas id="canvas"></canvas>
+        <script type="text/javascript" src="js/main.js"></script>
+        <script type="text/javascript" src="js/shape.js"></script>
+        <script type="text/javascript" src="js/circle.js"></script>
+        <script type="text/javascript" src="js/triangle.js"></script>
+        <script type="text/javascript" src="js/rectangle.js"></script>
+    </body>
+</html>
